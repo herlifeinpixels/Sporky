@@ -79,5 +79,20 @@ int main () {
     // Gesture takes on sequence fixed points in space, think of connecting dots on android lock screen
     cout << "Should return an array of sequences: " << mySwipe.getSequence() << endl;
     // Sample output: IDK, ask Nate.
+    
+// -----------------------------------------------------------------------------------------------------
+
+	// Test Recipe Module
+	// Recipe has one to many relationship with above modules
+	RecipeModule myRecipe;
+	
+	myRecipe.addGesture(mySwipe);
+	myRecipe.addProgram(myChrome);
+	myRecipe.addMacro(myPrintMacro);
+	
+	cout << "Should return an array of module objects: " << myRecipe.listRecipeComponents() << endl;
+	
+	
+	
 
 } // end main
