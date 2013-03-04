@@ -1,0 +1,89 @@
+@cDBlue: #008C9E;
+@cBlue: #00b4cc;
+@cGrey: #343838;
+@cDGrey: #222;
+@cText: #eee;
+@cWhite: #fff;
+
+@tTitle: 'Erica One';
+@tText: 'Open Sans';
+
+* {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	padding: 0;
+	height: 100%;
+	font-size: 62.5%;
+}
+
+header {
+	padding: 1em 0;
+	background: @cDBlue; /* Old browsers */
+	background: -moz-linear-gradient(left,  @cDBlue 0%, @cBlue 50%, @cDBlue 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,@cDBlue), color-stop(50%,@cBlue), color-stop(100%,@cDBlue)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  @cDBlue 0%,@cBlue 50%,@cDBlue 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  @cDBlue 0%,@cBlue 50%,@cDBlue 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  @cDBlue 0%,@cBlue 50%,@cDBlue 100%); /* IE10+ */
+	background: linear-gradient(to right,  @cDBlue 0%,@cBlue 50%,@cDBlue 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@cDBlue', endColorstr='@cDBlue',GradientType=1 ); /* IE6-9 */
+
+	h1 {
+		text-align: center;
+		font: 700 1.6em/1.6em @tText, Impact, Sans Serif;
+		color: @cText;
+	}
+}
+
+#container {
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1
+}
+
+#left {
+	position: relative;
+	width: 100px;
+	height: 100%;
+	background: @cGrey;
+	ul {
+		padding: 0;
+		list-style-type: none;
+		text-align: bottom;
+		li {
+			display: block;
+			text-align: center;
+			position: relative;
+			height: 100px;
+			background: @cBlue;
+			border-bottom: @cGrey solid 1px;
+			a {
+				display: block;
+				color: @cText;
+				position: relative;
+				top: 70px;
+				font: 300 1.6em/1.6em @tText, Impact, Sans Serif;
+			}
+		}
+	}
+}
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px @cDGrey;
+   -webkit-box-shadow: inset 0 0 10px @cDGrey;
+   box-shadow:         inset 0 0 10px @cDGrey;
+}
